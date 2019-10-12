@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Record
+{% endblock %}
+
+{% block main %}
+    <style>
+        body
+            {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFnwqANpBmjS3jeLdEguVuFYxT0XBN5QfxWoOPeAAiKvzUu0bh");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+    </style>
+
+    <table class="table table-bordered table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in records %}
+            <tr>
+                <th scope="row">{{ record.id }}</th>
+                <td>{{ record.name }}</td></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+</table>
+{% endblock %}

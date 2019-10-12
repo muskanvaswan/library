@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Return
+{% endblock %}
+
+{% block main %}
+
+    <style>
+        body
+            {
+                background-image: url("https://i.pinimg.com/originals/37/9f/82/379f824cf2a723f3d8c6f97c91d38364.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+    </style>
+
+    <form action="/returned" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="member_id" placeholder="Member Id" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="book_id" placeholder="Book ID" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Return</button>
+    </form>
+{% endblock %}

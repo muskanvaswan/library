@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Issued
+{% endblock %}
+
+{% block main %}
+    <style>
+        body
+            {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyP5iC95OBrSpwrhOpAxHOkU1GqoiVKstLorsCf4cQL2--q1Hy");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+    </style>
+
+    <table class="table table-bordered table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Member Id</th>
+                <th scope="col">Member Name</th>
+                <th scope="col">Book Id</th>
+                <th scope="col">Book Name</th>
+                <th scope="col">Date of Issue</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for issue in issues %}
+            <tr>
+                <td>{{ issue.member_id }}</th>
+                <td>{{ issue.member_n }}</td>
+                <td>{{ issue.book_id }}</th>
+                <td>{{ issue.book_n }}</th>
+                <td>{{ issue.date }}</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+</table>
+{% endblock %}

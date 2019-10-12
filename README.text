@@ -1,0 +1,15 @@
+My project is a website that is based on a library system, in which the librarian can register and then log in.
+Corresponding to the librarian id all the data from books to members becomes available to this librarian.
+This ensures that data from two seperate libraries doesn't get mixed.
+
+The librarian has complete contol over all the transactions taking place.
+He/she can add a book to the database upon purchase and also add members who would like to join.
+He/she can issue a book to a member by just entering the book id and member id.
+The return function ensures that if the member returns the book post seven days of the issue date then for every day thereafter, 1 rupee will be added to the fine value and eventually totalled at the time of return.
+
+The records tab on the navigation bar has rthree sections: members, books, and issues.
+The member tab displays the name and id of all members in that particular library.
+The books tab displays the name, id and status(available or issued) of every book added in the libraray.
+The issued tab diplays the name of memeber and name of book thta was issued, member id, book id and date of issue.
+
+The project was mainly inspired by the tedious task of library management followed in my school which I wished to contribute to.

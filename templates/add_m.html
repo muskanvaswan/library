@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Member
+{% endblock %}
+
+{% block main %}
+    <style>
+        body
+            {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTyOQDQFy21UUnoBlE3k7SAowcLVjigP9cAIeB1l7hz6tSaWkhi");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+    </style>
+    <form action="/add_m" method="post">
+        <div class="form-group">
+            <input autofocus class="form-control" name="name" placeholder="Name of Member" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+{% endblock %}

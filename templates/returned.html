@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Fine Owed
+{% endblock %}
+
+{% block main %}
+
+    <style>
+        body
+            {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5lFKHNrJmY4KS93_-yLCWDrQL4RvhXh31qwKzGCO96zuTTy1A");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+    </style>
+
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">You are late!</h4>
+        <p>
+            Due to late return, a fine of Rs. {{ fine }} /- is now owed to the library.
+        </p>
+        <hr>
+        <p class="mb-0">Click the button when paid.</p>
+    </div>
+    <button type="button" class="btn btn-outline-primary"><a class="nav-link" href="/">Paid</a></button>
+{% endblock %}

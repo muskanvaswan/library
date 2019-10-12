@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Issue
+{% endblock %}
+
+{% block main %}
+
+    <style>
+        body
+            {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5lFKHNrJmY4KS93_-yLCWDrQL4RvhXh31qwKzGCO96zuTTy1A");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+    </style>
+
+    <form action="/issue" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="member_id" placeholder="Member Id" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="book_id" placeholder="Book ID" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Issue</button>
+    </form>
+{% endblock %}
